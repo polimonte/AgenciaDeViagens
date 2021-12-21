@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+    color: black;
+    font-weight: bold;
+}
+
+
+body {
+    background-image: url(/img/bg.svg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#menu a {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+
+#home:hover {
+    color: rgb(128, 128, 128);
+}
+
+#destinos:hover {
+    color: red;
+}
+
+#promocoes:hover {
+    color: rgb(0, 255, 0);
+}
+
+#contatos:hover {
+    color: blue;
+}
+
+#meusDestinos:hover {
+    color: rgb(128, 128, 128);
+}
+
+.cards {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 10px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
+    border-radius: 25px;
+}
+
+.cards a, .mpromocoes a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards a:hover {
+    color: red;
+}
+
+.mpromocoes a:hover {
+    color: #00FF00;
+}
+
+.btpesquisar {
+    width: 100%;
+}
+
+.mpromocoes {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 10px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 255, 0);
+    border-radius: 25px;
+}
+
+
+.form-cadastroD {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 500px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 25px;
+}
+
+.mcontatos {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 500px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    border-radius: 25px;
+}
+
+#btnEnviarContato {
+    width: 100%;
+}
+
+
+.mDestinos {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 10px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
+    border-radius: 25px;
+}
+
+.carrinho {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 10px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 25px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: row;
+}

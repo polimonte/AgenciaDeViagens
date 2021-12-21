@@ -1,0 +1,65 @@
+﻿@model IEnumerable<RGBViagens.Models.ComprarDestinos>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Origem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Destinos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Volta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.N_Passageiros)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Classe)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Origem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Destinos.ID_Destinos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Volta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.N_Passageiros)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Classe)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

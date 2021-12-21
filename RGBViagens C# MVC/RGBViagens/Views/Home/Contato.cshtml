@@ -1,0 +1,59 @@
+﻿@model RGBViagens.Models.Contato
+@{
+    ViewData["Title"] = "CONTATO.";
+}
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-black" id="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="/img/RBG NOVO2.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link home" id="home" asp-action="Index" asp-controller="Home" >HOME.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link destinos" id="destinos" asp-action="Create" asp-controller="ComprarDestinos">DESTINOS.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link promocoes" id="promocoes" asp-action="Promocoes" asp-controller="Home">PROMOÇÕES.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contatos" id="contatos" asp-action="Create" asp-controller="Contatoes">CONTATO.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link meusDestinos" id="meusDestinos" asp-action="MeusDestinos" asp-controller="Home">MEUS DESTINOS.</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<main>
+    <div class="mcontatos">
+        <h3>CONTATO.</h3>
+        <form asp-action="Contatoes" method="post">
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">NOME COMPLETO.</label>
+                <input type="text" asp-for="NomeCompleto" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div>
+                <label for="exampleFormControlInput1" class="form-label">EMAIL.</label>
+                <input type="email" asp-for="Email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div>
+                <label for="exampleFormControlTextarea1" class="form-label">FALE CONOSCO.</label>
+                <textarea class="form-control" asp-for="Mensagem" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-outline-primary mt-2" id="btnEnviarContato">ENVIAR.</button>
+        </form>
+    </div>
+
+
+</main>

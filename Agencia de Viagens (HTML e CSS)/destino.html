@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESTINO.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><img class="logo" src="/img/RBG NOVO2.png" alt="logo"></li>
+                <li id="menu_logo">LOGO.</li>
+                <li id="menu_home"><a href="/index.html">HOME.</a></li>
+                <li id="menu_destino"><a href="/destino.html">DESTINO.</a></li>
+                <li id="menu_promocoes"><a href="/promocoes.html">PROMOÇÕES.</a></li>
+                <li id="menu_contato"><a href="/contato.html">CONTATO.</a></li>
+                <li id="menu_meusDestinos"><a href="/meusdestinos.html">MEUS DESTINOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="cadastroDestino">
+            <h3>FAÇA SUA RESERVA AGORA.</h3>
+            <nav class="grid_reservas">
+                <form class="form-reservas">
+                    <div class="">
+                        <label for="txtorigem">ORIGEM.</label>
+                        <div><input type="text" name="Origem" id="txtorigem">
+                            
+                        </div>
+                        <div>
+                            <label for="txtdestino">DESTINO.</label>
+                            <input type="text" name="Destino" id="txtdestino">
+                            
+                        </div>
+                    </div>
+                    <div class="form-reservas_3">
+                        <div>
+                            <label for="dtIda">IDA.</label>
+                            <input type="date" name="dtIda" id="dtIda">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="dtVolta">IDA.</label>
+                            <input type="date" name="dtVolta" id="dtVolta">
+                        </div>
+                    </div>
+                    <div class="form-reservas_4">
+                        <div>
+                            <label for="npassag">Nº DE PASSAGEIROS.</label>
+                            <input type="number" name="npassageiros" id="npassag">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="inputClasse" class="form-label">CLASSE.</label>
+                        <select id="inputClasse" class="form-select">
+                            <option value=""></option>
+                            <option value="cec">CLASSE ECONOMICA.</option>
+                            <option value="pc">PRIMEIRA CLASSE.</option>
+                            <option value="cex">CLASSE EXECUTIVA.</option>
+                        </select>
+                        
+                    </div>
+                </form>
+                <button type="submit" class="btpesquisar">ADICIONAR AO CARRINHO.</button>
+            </nav>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
